@@ -8,7 +8,8 @@ h2{
 	font-size: 40px;
 	color: #40474e;
 	text-transform: uppercase;
-	margin-bottom: 80px;
+    margin-bottom: 70px;
+
 }
 h3{
 	color: #40474e;
@@ -22,6 +23,7 @@ h3>span{
    	font-weight: 600;
 	text-transform:none;
     font-size: 18px;
+    line-height: 29px;
 }
 h2>span{
 	display: block;
@@ -29,6 +31,7 @@ h2>span{
     font-size: 26px;
     text-transform: none;
     max-width: 530px;
+    line-height: 36px;
 }
 h4{
 	color: #fff;
