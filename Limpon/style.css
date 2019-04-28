@@ -342,12 +342,12 @@ li{
 	background-image: url(img/icon-6.png);
  	background-size:100px 87px;
 }
-.grid-text>p{
-	color: #70abeb;
+.grid-foot{
+	color:#70abeb;
 }
-.grid-text>span{
-	font-weight: 700;
-    	color: black;
+.grid-foot>span{
+	color:black;
+	font-weight:600;
 }
 
 /*LISTS*/
