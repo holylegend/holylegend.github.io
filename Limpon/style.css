@@ -63,6 +63,7 @@ li{
 	align-items: center;
     margin-bottom: 307px;
     max-width: 1170px;
+    padding-top: 50px;
 }
 .logo{
 	display: block;
@@ -80,6 +81,7 @@ li{
 	padding:0;
 	display: flex;
 	letter-spacing: 1px;
+		flex-wrap: wrap;
 }
 .nav>li{
     padding: 0 21px;
@@ -262,12 +264,12 @@ li{
  						 "e h h";
  	grid-gap: 35px;
  	grid-template-columns: 1fr 1fr 1fr;
- 	grid-template-rows: 1fr 1fr 1fr 1fr;
  	max-width: 1110px;
  	margin: 0 auto;
  	margin-top: 89px;
     margin-bottom: 59px;
-
+	padding-left: 15px;
+	padding-right: 15px;
  }
  .grid-title{
  	grid-area: a;
@@ -378,7 +380,6 @@ li{
 	background-position: center;
 	background-size: cover;
 	padding-bottom: 335px;
-    padding-top: 55px;
     position: relative;
 }
 .screen-bg {
@@ -545,6 +546,22 @@ li{
 .box-price-item.active li{
 	color: #fff;
 }
+.plan-bg{
+		display: flex;
+	position: 	relative;
+	justify-content: space-between;
+}
+.plan-bg-item{
+	background-image: url(img/plan-bg.png);
+    position: absolute;
+    left: 284px;
+    bottom: -930px;
+	width: 65px;
+	height: 620px;
+}
+.plan-bg-2{
+    margin-left: 760px;
+}
 /*COMPANY*/
 .page-company{
 	background-image: url(img/company-bg.png);
@@ -560,27 +577,44 @@ li{
 	justify-content: space-between;
 	list-style-type: none;
 	margin: 0px auto;
+	flex-wrap: wrap;
 	padding: 0;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .company-one{
+	flex-basis: 198px;
+}
+.company-two{
+	flex-basis: 200px;
+}
+.company-three{
+	flex-basis: 201px;
+}
+.company-four{
+	flex-basis: 200px;
+}
+
+.list-company-item span{
+	display: block;
+	margin: 0 auto;
+}
+.company-one span{
 	background-image: url(img/com-1.png);
     width: 198px;
     height: 58px;
-    margin-left: 65px;
-    margin-top: 6px;
-    margin-right: 55px;
 }
-.company-two{
+.company-two span{
 	background-image: url(img/com-2.png);
 	width: 200px;
 	height: 69px;
 }
-.company-three{
+.company-three span{
 	background-image: url(img/com-3.png);
     width: 201px;
     height: 47px;
 }
-.company-four{
+.company-four span{
 	background-image: url(img/com-4.png);
 	width: 200px;
 	height: 69px;
@@ -594,7 +628,6 @@ li{
 	background-size: cover;
 }
 .box-sub{
-
 }
 .box-sub .btn-sub{
 	position: absolute;
@@ -805,6 +838,11 @@ li{
     right: 520px;
 }
 /*PAGE-SCRM*/
+.screen{
+	width: 100%;
+	max-width: 1228px;
+}
+
 .page-screen-list{
 	position: relative;
 	margin-left: 40px;
@@ -1078,9 +1116,10 @@ li{
 
 .end-icon-1{
 	display: block;
-	background-image: url(img/end-icon-1.png);
+	background-image: url(img/end-icon-1.svg);
 	width: 10px;
 	height: 16px;
+	fill: #fff;
 }
 .end-icon-2{
 	display: block;
@@ -1145,6 +1184,9 @@ li{
 	display:flex;
 	flex-direction: column;
 }
+.contact-form-text{
+	width: 170px;
+}
 .contact-form input, .contact-form textarea{
 	font-size:14px;
 	border:2px solid #dce4ec;
@@ -1187,3 +1229,33 @@ li{
 	left: 458px;
 	top: 210px;
 }
+/* MEdia */
+@media (max-width: 1060px) {
+	.list-company-item{
+		flex-basis: 50%;
+	}
+	.grid{
+		grid-template-areas: "a a"
+ 							 "b c"
+ 							 "d e"
+ 							 "f g"
+ 							 "h h";
+ 		grid-template-columns: 1fr 1fr;
+ 	}
+ 		.grid h2{
+ 		text-align: center;
+ 	    max-width: 1050px;
+ 	}
+ 	.box-subscribe-child{
+ 		flex-basis: 100%;
+ 	}
+ 	.nav{
+   		 flex-basis: 265%;
+ 	}
+ 	.nav li{
+ 		padding-top: 25px;
+ 		padding-bottom:  25px;
+ 	}
+
+}
+
