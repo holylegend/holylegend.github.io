@@ -308,7 +308,7 @@ li{
 }
 .grid-item{
 	text-align: center;
-	box-shadow: 0 0 15px #black;
+	box-shadow: 0 0 15px #e3e3e3;
 	border-radius: 8px;
 	padding: 55px 44px;
 }
@@ -1273,7 +1273,15 @@ li{
  	}
 	.box-price-item{
 		min-width: 568px;
+		margin: 0 auto;
+		margin-bottom: 	15px;
+
+
 	}
+	.plan-bg-item{
+		display: 	none;
+	}
+
 	
 }
 
