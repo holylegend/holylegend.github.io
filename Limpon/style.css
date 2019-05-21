@@ -344,7 +344,13 @@ li{
 	background-image: url(img/icon-6.png);
  	background-size:100px 87px;
 }
-
+.grid-foot{
+	color:#70abeb;
+}
+.grid-foot>span{
+	color:black;
+	font-weight:600;
+}
 
 /*LISTS*/
 
@@ -488,6 +494,7 @@ li{
 .box-price{
 	display: flex;
 	justify-content: space-between;
+    flex-wrap: wrap;
 }
 .box-price-item{
  	background-color: #edf4fb;
@@ -555,7 +562,7 @@ li{
 	background-image: url(img/plan-bg.png);
     position: absolute;
     left: 284px;
-    bottom: -930px;
+    bottom: -931px;
 	width: 65px;
 	height: 620px;
 }
@@ -1184,21 +1191,24 @@ li{
 	display:flex;
 	flex-direction: column;
 }
-.contact-form-text{
-	width: 170px;
-}
+
 .contact-form input, .contact-form textarea{
 	font-size:14px;
 	border:2px solid #dce4ec;
 	padding: 24px 313px 24px 35px;
     margin-bottom: 22px;
     border-radius: 40px;
+        max-width: 460px;
 }
-.contact-form textarea  {padding: 23px 316px 99px 35px;
+.contact-form textarea  {padding: 23px 11px 99px 35px;
     margin-bottom: 22px;
     border-radius: 28px;
     outline: none;
     }
+ .contact-form-text{
+ 		width: 90%;
+
+ }
 .contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {color#8995b3;}
 .contact-form input::-moz-placeholder, .contact-form  textarea::-webkit-input-placeholder {color:#8995b3;}
 .contact-form input::-moz-placeholder, .contact-form  textarea::-webkit-input-placeholder {color:#8995b3;}
@@ -1229,6 +1239,11 @@ li{
 	left: 458px;
 	top: 210px;
 }
+.contact-form-name:after{
+	background-image: url(img/form-icon.png);
+
+}
+
 /* MEdia */
 @media (max-width: 1060px) {
 	.list-company-item{
@@ -1256,6 +1271,17 @@ li{
  		padding-top: 25px;
  		padding-bottom:  25px;
  	}
+	.box-price-item{
+		min-width: 568px;
+		margin: 0 auto;
+		margin-bottom: 	15px;
 
+
+	}
+	.plan-bg-item{
+		display: 	none;
+	}
+
+	
 }
 
