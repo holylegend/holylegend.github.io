@@ -817,5 +817,11 @@ body {
 @media screen and (min-width: 1200px) {
     .container {
       max-width: 1110px; } }
+@media screen and (max-width: 752px){
+    .media-bg-1{
+      background-image: url(../img/media-bg-1.png)
+      width: 752px;
 
+    }
+}
 /*# sourceMappingURL=maps/main.css.map */
