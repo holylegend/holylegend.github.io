@@ -768,7 +768,8 @@ body {
   left: 1132px;
   text-transform: uppercase;
   font-size: 25px;
-  font-style: italic; }
+  font-style: italic;
+  outline: none;}
 
 .input::-webkit-input-placeholder {
   text-indent: 0px;
