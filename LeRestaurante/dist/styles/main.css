@@ -544,16 +544,17 @@ body {
     .footer-main__item-two {
       margin-right: 167px;
       font-size: 16px;
-      color: #000;}
+      }
       .footer-main__item-two > h3 {
         font-weight: 400;
         letter-spacing: 1.6px;
-        margin-bottom: 39px; }
+        margin-bottom: 39px;
+         color: #fff;}
       .footer-main__item-two > input {
         padding: 5px 19px;
         margin-right: 11px;
         opacity: 0.5;
-        color: #fff; }
+        color: #000; }
       .footer-main__item-two > button {
         margin-right: -16px;
         padding: 9px 21px 9px 20px;
