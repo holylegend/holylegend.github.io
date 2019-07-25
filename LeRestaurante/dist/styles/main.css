@@ -821,8 +821,14 @@ body {
 @media screen and (max-width: 752px){
     .media-bg-1{
       background-image: url(../img/media-bg-1.png)
-      width: 752px;
-
-    }
+      width: 752px;}}
+@media (max-width: 1400px){
+   .header-list{
+      margin-top: 125px;}
+   .headedr-list-item{
+      zoom: 81%;}
+   .nav{
+      zoom: 81%}
 }
+
 /*# sourceMappingURL=maps/main.css.map */
