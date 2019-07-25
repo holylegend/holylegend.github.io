@@ -358,14 +358,12 @@ body {
     padding: 0 0 12px; }
     .nav-item:hover {
       color: #f1ac11;
-      border-bottom: 3px #f1ac11 solid;
       transition: 0.2s; }
 
 .logo {
   background-image: url(../img/logo.png);
   width: 321px;
   height: 95px;
-  margin-top: 54px;
   margin-left: 42px;
   display: block; }
 
@@ -545,7 +543,8 @@ body {
         color: #bbbbbb; }
     .footer-main__item-two {
       margin-right: 167px;
-      font-size: 16px; }
+      font-size: 16px;
+      color: #000;}
       .footer-main__item-two > h3 {
         font-weight: 400;
         letter-spacing: 1.6px;
@@ -575,7 +574,8 @@ body {
       margin: 0 auto;
       margin-top: 107px; }
       .price-wrap__carousel-list {
-        max-width: 1170px; }
+        max-width: 1170px;
+         outline: none;}
         .price-wrap__carousel-list-desc {
           max-width: 348px;
           margin-top: 25px;
