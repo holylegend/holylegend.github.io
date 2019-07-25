@@ -829,7 +829,16 @@ body {
    .headedr-list-item{
       zoom: 81%;}
    .nav{
-      zoom: 81%}
+      zoom: 81%;}
 }
+@media (max-width: 910px){
+   .counter-list{
+      zoom: 65%;}
+   .logo{
+      zoom: 65%;}
+   .header-list-item{
+      zoom: 65%;}
+   .nav{
+      zoom: 65%;}
 
 /*# sourceMappingURL=maps/main.css.map */
