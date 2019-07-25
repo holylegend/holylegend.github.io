@@ -831,6 +831,16 @@ body {
    .nav{
       zoom: 81%;}
 }
+@media (max-width: 1000px){
+   .price-wrap__title{
+      zoom: 80%;}
+   .price-wrap__title > p{
+      margin-left: 262px;}
+   .price-wrap__carousel{
+      zoom: 61%;}
+   .about-us-address{
+      zoom: 72%;}
+}
 @media (max-width: 910px){
    .counter-list{
       zoom: 65%;}
@@ -839,6 +849,6 @@ body {
    .header-list-item{
       zoom: 65%;}
    .nav{
-      zoom: 65%;}
+      zoom: 65%;}}
 
 /*# sourceMappingURL=maps/main.css.map */
