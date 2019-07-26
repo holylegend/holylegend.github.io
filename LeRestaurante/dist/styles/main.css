@@ -836,6 +836,15 @@ body {
       height: 74px;
       background-size: cover;}
 }
+@media (max-width: 1200px){
+   
+   .header-list{
+      margin-top: 125px;
+      zoom: 68%;}
+   .headedr-list-item{
+      zoom: 68%;}
+    .logo{
+       zoom:80%;}}
 @media (max-width: 1000px){
    .price-wrap__title{
       zoom: 80%;}
