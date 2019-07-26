@@ -825,11 +825,16 @@ body {
       width: 752px;}}
 @media (max-width: 1400px){
    .header-list{
-      margin-top: 125px;}
+      margin-top: 125px;
+      zoom: 77%;}
    .headedr-list-item{
-      zoom: 81%;}
+      zoom: 78%;}
    .nav{
       zoom: 81%;}
+   .logo{
+      width: 243px;
+      height: 74px;
+      background-size: cover;}
 }
 @media (max-width: 1000px){
    .price-wrap__title{
@@ -842,12 +847,15 @@ body {
       zoom: 72%;}
 }
 @media (max-width: 910px){
+   
    .counter-list{
       zoom: 65%;}
    .logo{
       zoom: 65%;}
+   .header-list{
+      margin-top: 174px;}
    .header-list-item{
-      zoom: 65%;}
+      zoom: 55%;}
    .nav{
       zoom: 65%;}}
 
