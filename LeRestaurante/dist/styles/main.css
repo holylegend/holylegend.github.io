@@ -520,6 +520,7 @@ body {
 .footer {
   background-image: url(../img/footer-bg.png);
   color: #fff;
+  background-size: cover;
   font-style: italic; }
   .footer-main {
     padding: 77px 0;
@@ -837,7 +838,8 @@ body {
       background-size: cover;}
 }
 @media (max-width: 1200px){
-   
+   .price-wrap{
+      zoom: 80%;}
    .header-list{
       margin-top: 125px;
       zoom: 68%;}
