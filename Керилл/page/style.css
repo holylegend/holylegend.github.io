@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+.body{
+    background-image: url(../img/dawn.png);
+    width: 930px;
+    height: 730px;
+    background-size: cover;
+    margin: 0 auto;
+}
+.scream{
+    background-image: url(../img/scream.png);
+    width: 1920px;
+    height: 1080px;
+    display: none;
+}
