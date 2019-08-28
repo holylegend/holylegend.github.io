@@ -358,14 +358,12 @@ body {
     padding: 0 0 12px; }
     .nav-item:hover {
       color: #f1ac11;
-      border-bottom: 3px #f1ac11 solid;
       transition: 0.2s; }
 
 .logo {
   background-image: url(../img/logo.png);
   width: 321px;
   height: 95px;
-  margin-top: 54px;
   margin-left: 42px;
   display: block; }
 
@@ -522,6 +520,7 @@ body {
 .footer {
   background-image: url(../img/footer-bg.png);
   color: #fff;
+  background-size: cover;
   font-style: italic; }
   .footer-main {
     padding: 77px 0;
@@ -545,16 +544,18 @@ body {
         color: #bbbbbb; }
     .footer-main__item-two {
       margin-right: 167px;
-      font-size: 16px; }
+      font-size: 16px;
+      }
       .footer-main__item-two > h3 {
         font-weight: 400;
         letter-spacing: 1.6px;
-        margin-bottom: 39px; }
+        margin-bottom: 39px;
+         color: #fff;}
       .footer-main__item-two > input {
         padding: 5px 19px;
         margin-right: 11px;
         opacity: 0.5;
-        color: #fff; }
+        color: #000; }
       .footer-main__item-two > button {
         margin-right: -16px;
         padding: 9px 21px 9px 20px;
@@ -575,7 +576,8 @@ body {
       margin: 0 auto;
       margin-top: 107px; }
       .price-wrap__carousel-list {
-        max-width: 1170px; }
+        max-width: 1170px;
+         outline: none;}
         .price-wrap__carousel-list-desc {
           max-width: 348px;
           margin-top: 25px;
@@ -768,7 +770,8 @@ body {
   left: 1132px;
   text-transform: uppercase;
   font-size: 25px;
-  font-style: italic; }
+  font-style: italic;
+  outline: none;}
 
 .input::-webkit-input-placeholder {
   text-indent: 0px;
@@ -820,8 +823,51 @@ body {
 @media screen and (max-width: 752px){
     .media-bg-1{
       background-image: url(../img/media-bg-1.png)
-      width: 752px;
-
-    }
+      width: 752px;}}
+@media (max-width: 1400px){
+   .header-list{
+      margin-top: 266px;
+      zoom: 77%;}
+   .headedr-list-item{
+      zoom: 78%;}
+   .nav{
+      zoom: 81%;}
+   .logo{
+      width: 243px;
+      height: 74px;
+      background-size: cover;}
 }
+@media (max-width: 1200px){
+   .price-wrap{
+      zoom: 80%;}
+   .header-list{
+          margin-top: 230px;
+      zoom: 68%;}
+   .headedr-list-item{
+      zoom: 68%;}
+    .logo{
+       zoom:80%;}}
+@media (max-width: 1000px){
+   .price-wrap__title{
+      zoom: 80%;}
+   .price-wrap__title > p{
+      margin-left: 262px;}
+   .price-wrap__carousel{
+      zoom: 61%;}
+   .about-us-address{
+      zoom: 72%;}
+}
+@media (max-width: 910px){
+   
+   .counter-list{
+      zoom: 65%;}
+   .logo{
+      zoom: 65%;}
+   .header-list{
+      margin-top: 174px;}
+   .header-list-item{
+      zoom: 55%;}
+   .nav{
+      zoom: 65%;}}
+
 /*# sourceMappingURL=maps/main.css.map */
