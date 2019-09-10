@@ -1059,12 +1059,6 @@ h3 {
     .container {
       max-width: 1110px; } }
 
-@media (max-width: 1260px) {
-    .page-carousel {
-      background-color: #44444f; }
-      .page__svg {
-        display: none; } }
-
 @media (max-width: 1024px) {
     .page {
       padding-top: 120px;
@@ -1131,12 +1125,21 @@ h3 {
       flex-direction: column; }
       .block-counter p {
         margin-bottom: 80px; } }
-@media(min-width: 2560px;) {
+@media (min-width: 2560px;) {
    .page-carousel{
       padding-top: 180px;
    }
    .block-author{
       margin-top: 360px;
    }
+   .block-carousel{
+      margin-top: 180px;
 }
+   @media (max-width: 1440px;) {
+      .page-carousel {
+      background-color: #44444f; }
+      .page__svg {
+        display: none; }
+   }
+      
 /*# sourceMappingURL=maps/main.css.map */
