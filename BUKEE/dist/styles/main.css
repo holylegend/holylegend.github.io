@@ -1131,5 +1131,12 @@ h3 {
       flex-direction: column; }
       .block-counter p {
         margin-bottom: 80px; } }
-
+@media(min-width: 2560px;) {
+   .page-carousel{
+      padding-top: 180px;
+   }
+   .block-author{
+      margin-top: 360px;
+   }
+}
 /*# sourceMappingURL=maps/main.css.map */
