@@ -1212,6 +1212,11 @@ display: none;}
        line-height: 1;}
    .book-under-button2{
       margin-top: 853px;
-      margin-left: -70px;}}
+      margin-left: -70px;}
+   .block-footer__warp{
+     max-width: 422px;
+      margin-right: 22px;}
+   .block-footer__item{
+      margin-right: 8px;}}
       
 /*# sourceMappingURL=maps/main.css.map */
