@@ -372,12 +372,11 @@ body {
   background-image: url(../img/header.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  padding-bottom: 405px;
   min-height: 100vh;}
   .header-list {
     display: flex;
     justify-content: space-between;
-    margin-top: 280px; }
+    margin-top: 360px; }
     .header-list-item {
       background-image: url(../img/header-element-bg.png);
       height: 253px;
