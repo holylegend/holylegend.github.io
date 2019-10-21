@@ -372,7 +372,8 @@ body {
   background-image: url(../img/header.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  padding-bottom: 405px; }
+  padding-bottom: 405px;
+  min-height: 100vh;}
   .header-list {
     display: flex;
     justify-content: space-between;
