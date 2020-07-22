@@ -468,7 +468,7 @@ body {
   padding-top: 1px; }
   .about-us-address {
     background-image: url(../img/address.png);
-    margin: 34px auto;
+    margin: 0px auto;
     max-width: 647px;
     padding: 246px 0 164px 0;
     position: relative; }
