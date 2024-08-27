@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя характеристика</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 300px;
+            margin: 40px;
+            background-color: #2b2b2b;
+            color: #ffffff;
+        }
+        .name{
+            font-size: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .container {
+            text-align: center;
+        }
+        .plus {
+            background-color: #6c7156; /*Тростниково зеленый*/
+            font-size: 24px;
+            color: #ffffff;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        .minus {
+            background-color: #6495ed; /*Васильковый*/
+            font-size: 20px;
+            color: #ffffff; 
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        .highlight {
+            background-color:  #eceabe; /*Весенне-зеленый Крайола*/ 
+            font-size: 18px;
+            color: #000000;
+            padding: 10px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="name">Таран Виталий</div>
+<div class="container">
+    <marquee behavior="scroll" direction="left" scrollamount="20" onmouseover="this.stop();" onmouseout="this.start();">
+        <div id="qualities1" class="plus">Высокий. Занимаюсь спортом. Работаю. Свободное время стараюсь провести с пользой. Восхищаюсь природой(особенно горами). Есть кошечка. Ношу черную одежду. Полностью погружаюсь в то, что мне интересно. Негативно отношусь к вредным привычкам.</div>
+    </marquee>
+    
+    <marquee behavior="scroll" direction="left" scrollamount="20" onmouseover="this.stop();" onmouseout="this.start();">
+        <div id="qualities2" class="minus">Худой. Иногда могу быть невнимательным. </div>
+    </marquee>
+    
+    <marquee behavior="scroll" direction="left" scrollamount="20" onmouseover="this.stop();" onmouseout="this.start();">
+        <div id="qualities3" class="highlight">Высокий. Занимаюсь спортом. Работаю. Свободное время стараюсь провести с пользой. Восхищаюсь природой(особенно горами). Есть кошечка. Ношу черную одежду. Полностью погружаюсь в то, что мне интересно. Негативно отношусь к вредным привычкам.</div>
+    </marquee>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const qualities1 = document.getElementById('qualities1');
+        const qualities2 = document.getElementById('qualities2');
+        const qualities3 = document.getElementById('qualities3');
+    
+        function displayQualities() {
+            qualities1.style.display = 'block';
+            qualities2.style.display = 'none';
+            qualities3.style.display = 'none';
+            setTimeout(function () {
+                qualities2.style.display = 'block';
+            }, 15000); // Показываем вторую строку после 15 секунд
+            setTimeout(function () {
+                qualities3.style.display = 'block';
+            }, 30000); // Показываем третью строку после 30 секунд
+            setTimeout(function () {
+                qualities3.style.display = 'none';
+            }, 45000); // Скрываем третью строку после 45 секунд
+        }
+    
+        displayQualities();
+    
+        setInterval(displayQualities, 45000); // Повторяем каждые 45 секунд
+    });
+    </script>
+
+</body>
+</html>
