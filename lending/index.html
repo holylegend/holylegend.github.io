@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хвосты Ратуша</title>
+    <style>
+        body {
+    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans для кринжового эффекта */
+    background-color: #ffcc00; /* Яркий фон */
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden; /* Отключаем прокрутку */
+    color: #222;
+}
+.containerContent img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+.background-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('wad-rat.gif');
+    background-size: 150px;
+    background-repeat: repeat;
+    z-index: -1;
+    opacity: 0.7; /* Полупрозрачные гифки на заднем фоне */
+}
+
+.background-gif-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('rat-tail.gif');
+    background-size: 200px;
+    background-repeat: repeat;
+    animation: move-background 10s linear infinite;
+    z-index: -2;
+}
+
+@keyframes move-background {
+    from { transform: translateX(0); }
+    to { transform: translateX(-200px); }
+}
+
+h1 {
+    text-align: center;
+    color: #ff00ff;
+    font-size: 3em;
+    text-shadow: 3px 3px #00ff00;
+    animation: wiggle 1s infinite;
+    animation: zoom 1s infinite;
+}
+
+.container {
+    background-image: url(rat-jump.gif);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    animation: switchbg 10s infinite;
+}
+
+@keyframes timerS {
+    0% { background-color: #ff6699; transform: rotate(10deg); }
+    25% { background-color: #ff66ff; }
+    50% { background-color: #6699ff; transform: rotate(-10deg); }
+    75% { background-color: #66ff66; }
+    100% { background-color: #ff6699; transform: rotate(10deg); }
+}
+@keyframes switchbg {
+    0% { background-size: 10%; }
+    25% { background-size: 15%; }
+    50% { background-size: 20%; }
+    75% { background-size: 15%; }
+    100% { background-size: 10%; }
+}
+
+.containerContent {
+    background-color: #ff6666;
+    border: 5px dashed #ffcc00;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    transform: rotate(10deg);
+    animation: wiggle 1s infinite;
+    transition: transform 0.3s ease;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    100% { transform: rotate(10deg); }
+}
+@keyframes zoom {
+    0% {transform: scale(120%);}
+    50% {transform: scale(50%);}
+    100% {transform: scale(120%);}
+}
+button {
+    background-color: #00ff00;
+    color: #ff00ff;
+    border: 3px solid #000;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+button:hover {
+    transform: rotate(360deg);
+    background-color: #ff00ff;
+    color: #00ff00;
+}
+.footer{
+    display: flex;
+}
+.tglogo{
+    width: 50px;
+    height: auto;
+    animation: rotate 1s infinite;
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.timer-container {
+    display: flex;
+    align-items: center;
+    background-color: #ff6699;
+    border: 5px dashed #00ff00;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00ff00;
+    animation: timerS 5s linear infinite;
+    
+}
+
+@keyframes spin {
+    0% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    100% { transform: rotate(10deg); }
+}
+
+.timer-block {
+    font-size: 3em;
+    padding: 10px 20px;
+    background-color: #00ff00;
+    border: 3px solid #ff0000;
+    border-radius: 10px;
+    margin: 0 5px;
+    text-shadow: 3px 3px #000;
+    animation: bounce 2s infinite;
+}
+.colon {
+    font-size: 3em;
+    color: #fff;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+    </style>
+</head>
+<body>
+    <div class="background-gif"></div>
+    <div class="naming">
+        <h1>Хвосты Ратуша</h1>
+    </div>
+    <div class="description">
+        <h2>О компании "Хвосты Ратуша"</h2>
+        <p>О компании "Хвосты Ратуша"
+
+            Добро пожаловать на сайт компании "Хвосты Ратуша" — лидера на рынке по продаже крысиных хвостов! Наша фирма была основана в 2020 году с целью предоставить клиентам продукт, уникальный в своем роде, и за это время мы завоевали доверие как частных покупателей, так и крупных компаний.
+            Наши принципы
+            🔍 Качество и свежесть: Мы гордимся тем, что наши хвосты проходят строгий отбор и соответствуют всем стандартам качества. Каждый хвост проходит три этапа проверки перед тем, как попасть на прилавок.
+            ⚖️ Этика и устойчивость: Мы заботимся о природе и строго соблюдаем принципы устойчивого развития. Наши крысиные хвосты получены без вреда для экосистемы.
+            📦 Гибкость и индивидуальный подход: Мы работаем как с розничными, так и с оптовыми заказчиками. Для каждого клиента разрабатывается персональное предложение, которое учитывает все потребности и пожелания.
+            История компании
+            2020 г. — Основание компании "Хвосты Ратуша". 2021 г. — Открытие первого розничного магазина. 2022 г. — Запуск интернет-магазина с доставкой по всей стране. 2023 г. — Достижение первой крупной сделки на экспорт крысиных хвостов в Европу.
+            Наша продукция
+            Мы предлагаем крысиные хвосты высшего качества в различных вариантах:
+            Свежие хвосты 🐀
+            Сушеные хвосты 🌾
+            Маринованные хвосты 🧂
+            Компания "Хвосты Ратуша" всегда готова предоставить вам продукт, который соответствует вашим требованиям. Мы верим, что будущее за инновациями, и с гордостью продолжаем развивать рынок крысиных хвостов.</p>
+    </div>
+    <div class="timerr">
+        <div class="timer-container">
+            <div class="timer-block" id="days">00</div>
+            <div class="label">Дней</div>
+            <div class="colon">:</div>
+            <div class="timer-block" id="hours">00</div>
+            <div class="label">Часов</div>
+            <div class="colon">:</div>
+            <div class="timer-block" id="minutes">00</div>
+            <div class="label">Минут</div>
+            <div class="colon">:</div>
+            <div class="timer-block" id="seconds">00</div>
+            <div class="label">Секунд</div>
+            <p> Срок действия акции ограничен. Правила проведения акции читай <a href="">тут</a></p>
+        </div>
+        
+    </div>
+    
+    <div class="container">
+        <div class="containerContent">
+            <img src="blackrattail.png" alt="">
+            <h2 class="name">Хвост черной крысы</h2>
+            <p class="containerContent-desc">Тонкий и гибкий хвост с характерной гладкой текстурой.</p>
+            <button>Купить</button>
+        </div>
+        <div class="containerContent">
+            <img class="imagine" src="africanrattail.png" alt="">
+            <h2 class="name">Хвост африканской крысы</h2>
+            <p class="containerContent-desc">Прочный и слегка шероховатый хвост. Уникален благодаря своей текстуре и редкости. Идеален для этнических аксессуаров.</p>
+            <button>Купить</button>
+        </div>
+        <div class="containerContent">
+            <img class="imagine" src="papuarattail.png" alt="">
+            <h2 class="name">Хвост папуасской крысы</h2>
+            <p class="containerContent-desc">Экзотический и мягкий хвост с темным окрасом. Отличный выбор для тех, кто ищет редкость и стиль.</p>
+            <button>Купить</button>
+        </div>
+        <div class="containerContent">
+            <img class="imagine" src="grayrattail.png" alt="">
+            <h2 class="name">Хвост серой крысы</h2>
+            <p class="containerContent-desc">Классический вариант с нейтральным оттенком. Универсален и широко используется в различных проектах и изделиях.</p>
+            <button>Купить</button>
+        </div>
+        <div class="containerContent">
+            <img class="imagine" src="white.png" alt="">
+            <h2 class="name">Хвост белой крысы</h2>
+            <p class="containerContent-desc">Элегантный светлый хвост с бархатистой поверхностью. Часто используется для создания светлых контрастных композиций.</p>
+            <button>Купить</button>
+        </div>
+        <div class="containerContent">
+            <img class="imagine" src="kangaroorattail.png" alt="">
+            <h2 class="name">Хвост крысы-кенгуру</h2>
+            <p class="containerContent-desc">Удлинённый и упругий хвост с уникальной структурой. Идеален для инновационных дизайнерских решений</p>
+            <button>Купить</button>
+        </div>
+        <div class="containerContent">
+            <img class="imagine" src="bambookrattail.png" alt="">
+            <h2 class="name">Хвост бамбуковой крысы</h2>
+            <p class="containerContent-desc">Природное вдохновение. Этот хвост отличается крепкостью и эко-стилем, напоминающим бамбуковый стебель.</p>
+            <button>Купить</button>
+        </div>
+        <div class="containerContent">
+            <img class="imagine" src="trostnikovayarattail.png" alt="">
+            <h2 class="name">Хвост тростниковой крысы</h2>
+            <p class="containerContent-desc">Оригинальный выбор с тропическим акцентом. Прочный и устойчивый, он обладает естественным оттенком и уникальным узором.</p>
+            <button>Купить</button>
+        </div>
+        <div class="containerContent">
+            <img class="imagine" src="firerattail.png" alt="">
+            <h2 class="name">Хвост огненной крысы</h2>
+            <p class="containerContent-desc">Этот хвост отличается ярким красно-оранжевым оттенком и легким блеском.Хвост огненной крысы идеально подходит для создания эффектных декоративных элементов или аксессуаров.</p>
+            <button>Купить</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Поддерживайте с нами связь в наших соц.сетях</p>
+        <a href=""><img class="tglogo" src="pngwing.com.png" alt=""></a>
+    </div>
+    <div class="background-gif-overlay"></div>
+    <script>
+    function startCountdown(endDate) {
+    const endTime = new Date(endDate).getTime();
+
+    setInterval(() => {
+        const now = new Date().getTime();
+        const timeLeft = endTime - now;
+
+        if (timeLeft >= 0) {
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        } else {
+            clearInterval();
+            document.querySelector('.timer-container').textContent = "Акция завершена!";
+        }
+    }, 1000);
+}
+
+// Устанавливаем дату окончания акции
+startCountdown('2024-12-31T23:59:59');
+    </script>
+</body>
+</html>
