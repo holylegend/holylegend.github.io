@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Карл</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fffafa;
+        }
+
+        #container {
+            text-align: center;
+        }
+        button {
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+
+    </style></head>
+<body id="body">
+
+<div id="container">
+    <button id="Button">Нажми на меня!</button>
+</div>
+<div id="edit" style="display: none;">
+    <video width="800" height="800" autoplay muted id="videoId" src="echoslam2.mp4"></video>
+</div>
+
+<script>
+        var video = document.getElementById('videoId')
+        function restartVideo() {
+        video.currentTime = 0;
+        video.play();
+        };
+    function restart() {
+        document.getElementById('container').style.display = 'block'
+        document.getElementById('edit').style.display = 'none'
+        document.getElementById('body').style.backgroundColor = '#ffffff';
+        
+    }
+    document.getElementById('Button').addEventListener('click', function() {
+        document.getElementById('body').style.backgroundColor = '#2b2b2b';
+        document.getElementById('container').style.display = 'none';
+        document.getElementById('edit').style.display = 'block';
+        var audio = new Audio('phonk.mp3');
+        audio.play();
+        restartVideo();
+        setTimeout(restart, 9810);
+    });
+</script>
+</body>
+</html>
