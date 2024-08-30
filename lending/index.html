@@ -283,28 +283,44 @@ button:hover {
     <script>
     function startCountdown(endDate) {
     const endTime = new Date(endDate).getTime();
+        setInterval(() => {
+            const now = new Date().getTime();
+            const timeLeft = endTime - now;
 
+            if (timeLeft >= 0) {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById('days').textContent = String(days).padStart(2, '0');
+                document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            } else {
+                clearInterval();
+                document.querySelector('.timer-container').textContent = "Акция завершена!";
+            }
+            audioo();
+            }, 1000);
+    }
+    function audioo(){
     setInterval(() => {
-        const now = new Date().getTime();
-        const timeLeft = endTime - now;
+        var random_num = Math.floor(Math.random() * 3) + 1;
+        const audio1 = new Audio('audio1.mp3');
+        const audio2 = new Audio('audio2.mp3');
+        const audio3 = new Audio('audio3.mp3');
 
-        if (timeLeft >= 0) {
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-            document.getElementById('days').textContent = String(days).padStart(2, '0');
-            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-        } else {
-            clearInterval();
-            document.querySelector('.timer-container').textContent = "Акция завершена!";
+        if ( random_num == 1 ){
+            audio1.play();
+        } else if ( random_num == 2) {
+            audio2.play();
+        } else  {
+            audio3.play();
         }
-    }, 1000);
+    }, 5000)
 }
-
+audioo();
 // Устанавливаем дату окончания акции
 startCountdown('2024-12-31T23:59:59');
     </script>
